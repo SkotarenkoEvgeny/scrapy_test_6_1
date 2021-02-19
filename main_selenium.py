@@ -60,7 +60,7 @@ finally:
     browser.quit()
 
 with open(FILENAME, "w", newline='', encoding='UTF-8') as file:
-    columns = ['name_feature', 'work_time', 'rating', 'addres']
+    columns = ['name_feature', 'work_time', 'rating', 'address']
     writer = csv.DictWriter(file, fieldnames=columns)
     writer.writeheader()
     writer.writerows(data_set)
